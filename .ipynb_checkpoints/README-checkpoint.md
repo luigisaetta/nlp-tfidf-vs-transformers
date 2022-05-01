@@ -1,7 +1,7 @@
 # NLP and Sentiment Analysis: TF-IDF vs Transformers
 In this repo I have collected all the code developed to test the transformers approach vs tf-idf
 
-I've developed some model for Sentiment Analysis. 
+I've developed some models for Sentiment Analysis. 
 
 ## Dataset
 The dataset used is the **Internet Movie Dataset (IMdb)**:
