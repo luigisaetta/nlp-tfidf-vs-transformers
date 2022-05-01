@@ -20,7 +20,7 @@ I have used this dataset because **it has been widely used to show how to apply 
 ## Bags-of-words and TF-IDF
 The simplest approach to use ML on Text data is to consider a text as "a bag of words".
 
-In other words, to build a feature vector out of the text we:
+In other words, to build a features' vector out of the text we:
 * build a list of words to track (a dictionary)
 * count the occurence of each word in the text
 * scale this value to avoid that common words (a, an, the...) have the biggest importance
@@ -58,6 +58,17 @@ from O' Reilly (I greatly recommend reading this book!)
 The approach based on Transformers is explored in my notebook:
 
 https://github.com/luigisaetta/nlp-tfidf-vs-transformers/blob/main/train1-kfold-distilbert.ipynb
+
+## Comparison
+
+The results obtained so far are summarized in this table:
+
+
+| Algorithm     | Accuracy    | Training time (sec.) |
+| ------------- |-------------| ---------------------|
+| TF-IDF        | 0.866 | 90                         |
+| distil-bert   | 0.920 | 10500                      |
+
 
 ## Other works
 As you can easily image the subject has already been explored and you can find several papers or works on Internet (even if not too many)
