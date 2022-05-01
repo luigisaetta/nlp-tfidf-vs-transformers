@@ -24,14 +24,14 @@ The model I have used is: "distilbert-base-uncased", that is transparently downl
 
 Some details regarding my custom tuning:
 * MAX_LENGTH = 300
-* to be independent from the train/validation solit) I have used k-fold cross cv (folds = 5)
+* to be independent from the train/validation split, I have used k-fold cv (folds = 5)
 * EPOCHS = 3
 
 on a P100 GPU the entire training process takes around **150 mins**.
 
-all the details needed for fine tuning distilbert on a custom dataset can be found, with a clear exaplanation, in chap. 2 of the book:
+all the details needed for fine tuning distilbert on a custom dataset can be found, with a clear explanation, in chap. 2 of the book:
 
-Natural Language Processing with Transformers
+***Natural Language Processing with Transformers***
 
 from O' Reilly (I greatly recommend reading this book!)
 
