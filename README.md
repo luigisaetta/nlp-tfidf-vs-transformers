@@ -57,7 +57,7 @@ from O' Reilly (I greatly recommend reading this book!)
 
 The approach based on Transformers is explored in my notebook:
 
-TODO
+https://github.com/luigisaetta/nlp-tfidf-vs-transformers/blob/main/train1-kfold-distilbert.ipynb
 
 ## Other works
 As you can easily image the subject has already been explored and you can find several papers or works on Internet (even if not too many)
