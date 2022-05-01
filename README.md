@@ -31,7 +31,7 @@ on a P100 GPU the entire training process takes around **150 mins**.
 
 all the details needed for fine tuning distilbert on a custom dataset can be found, with a clear explanation, in chap. 2 of the book:
 
-***Natural Language Processing with Transformers***
+[Natural Language Processing with Transformers](https://www.amazon.it/Natural-Language-Processing-Transformers-Applications/dp/1098103246/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1651396765&sr=8-2)
 
 from O' Reilly (I greatly recommend reading this book!)
 
