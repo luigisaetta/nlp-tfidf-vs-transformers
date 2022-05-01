@@ -5,15 +5,17 @@ I've developed models for Sentiment Analysis.
 
 ## Dataset
 The dataset used is the **Internet Movie Dataset (IMdb)**:
-a collection of 50000 feedbacks divided in two categories: 0= negative, 1=positive)
+a collection of 50000 feedbacks divided in two categories (0= negative, 1=positive).
 
 The dataset can be downloaded from here: 
 
 http://ai.stanford.edu/~amaas/data/sentiment/
 
-after the download it can be decompressed with this command:
+After the download it can be decompressed with this command:
 
+```
 tar -zxf aclImdb_v1.tar.gz
+```
 
 I have used this dataset because **it has been widely used to show how to apply ML to Text analysis**.
 
@@ -63,12 +65,16 @@ https://github.com/luigisaetta/nlp-tfidf-vs-transformers/blob/main/train1-kfold-
 
 The results obtained so far are summarized in this table:
 
-
 | Algorithm     | Accuracy    | Training time (sec.) |
 | ------------- |-------------| ---------------------|
 | TF-IDF        | 0.866 | 90                         |
 | distil-bert   | 0.920 | 10500                      |
 
+in summary:
+* TF-IDF approach is very fast; Even using k-fold cv the total training time is: 90 sec; But you should be aware that if you don't limit the number of words it can consume a lot of memory
+* Transformers with distil-bert gives by far a better accuracy; The improvement is significant; The training time is much bigger but it is affordable; Take care that to train the model you need a GPU
+
+The Transformer gives an higher accuracy for its superior achitecture (the self-attention mechanism is one the details) but also because we start from a pre-trained model (distil-bert) applying transfer learning.
 
 ## Other works
 As you can easily image the subject has already been explored and you can find several papers or works on Internet (even if not too many)
