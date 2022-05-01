@@ -17,6 +17,24 @@ tar -zxf aclImdb_v1.tar.gz
 
 I have used this dataset because **it has been widely used to show how to apply ML to Text analysis**.
 
+## Transformers
+Obviously, I have used the **Transformers library** from **HuggingFace**.
+
+The model I have used is: "distilbert-base-uncased", that is transparently downloaded from the HF Hub.
+
+Some details regarding my custom tuning:
+* MAX_LENGTH = 300
+* to be independent from the train/validation solit) I have used k-fold cross cv (folds = 5)
+* EPOCHS = 3
+
+on a P100 GPU the entire training process takes around **150 mins**.
+
+all the details needed for fine tuning distilbert on a custom dataset can be found, with a clear exaplanation, in chap. 2 of the book:
+
+Natural Language Processing with Transformers
+
+from O' Reilly (I greatly recommend reading this book!)
+
 ## Other works
 As you can easily image the subject has already been explored and you can find several papers or works on Internet (even if not too many)
 
