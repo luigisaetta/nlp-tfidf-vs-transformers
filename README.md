@@ -17,6 +17,15 @@ tar -zxf aclImdb_v1.tar.gz
 
 I have used this dataset because **it has been widely used to show how to apply ML to Text analysis**.
 
+## Other works
+As you can easily image the subject has already been explored and you can find several papers or works on Internet (even if not too many)
+
+For example, in this paper https://arxiv.org/pdf/2005.13012.pdf the authors compare results obtained using a **BERT fine-tuned model** (see section 4.1) with a TF_IDF model.
+
+Their results:
+* BERT : ACC = 0.939
+* TF_IDF + Multinomial NB: ACC = 0.877
+
 ## Citations
 @InProceedings{maas-EtAl:2011:ACL-HLT2011,
   author    = {Maas, Andrew L.  and  Daly, Raymond E.  and  Pham, Peter T.  and  Huang, Dan  and  Ng, Andrew Y.  and  Potts, Christopher},
