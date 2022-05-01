@@ -1,7 +1,7 @@
 # NLP and Sentiment Analysis: TF-IDF vs Transformers
-In this repo I have collected all the code developed to test the transformers approach vs tf-idf
+In this repo I have collected all the code developed to test the **transformers approach vs tf-idf**
 
-I've developed some models for Sentiment Analysis. 
+I've developed models for Sentiment Analysis. 
 
 ## Dataset
 The dataset used is the **Internet Movie Dataset (IMdb)**:
@@ -16,6 +16,26 @@ after the download it can be decompressed with this command:
 tar -zxf aclImdb_v1.tar.gz
 
 I have used this dataset because **it has been widely used to show how to apply ML to Text analysis**.
+
+## Bags-of-words and TF-IDF
+The simplest approach to use ML on Text data is to consider a text as "a bag of words".
+
+In other words, to build a feature vector out of the text we:
+* build a list of words to track (a dictionary)
+* count the occurence of each word in the text
+* scale this value to avoid that common words (a, an, the...) have the biggest importance
+
+Term Frequency (TF) is the simple count of the word occurrence in each document. Inverse Document Frequency (IDF) is one way to scale.
+
+Well, a very good and detailed explanation can be found, for example, in the book from S. Raschka:
+
+[Python Machine Learning](https://www.amazon.it/Python-Machine-Learning-scikit-learn-TensorFlow/dp/1789955750/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1VB5VPMTQ9D5&keywords=Python+Machine+Learning&qid=1651399178&sprefix=python+machine+learning%2Caps%2C87&sr=8-1)
+
+in chap. 8.
+
+The approach based on TF-IDF is explored in my notebook:
+
+https://github.com/luigisaetta/nlp-tfidf-vs-transformers/blob/main/imdb_tf_idf.ipynb
 
 ## Transformers
 Obviously, I have used the **Transformers library** from **HuggingFace**.
@@ -34,6 +54,10 @@ all the details needed for fine tuning distilbert on a custom dataset can be fou
 [Natural Language Processing with Transformers](https://www.amazon.it/Natural-Language-Processing-Transformers-Applications/dp/1098103246/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1651396765&sr=8-2)
 
 from O' Reilly (I greatly recommend reading this book!)
+
+The approach based on Transformers is explored in my notebook:
+
+TODO
 
 ## Other works
 As you can easily image the subject has already been explored and you can find several papers or works on Internet (even if not too many)
