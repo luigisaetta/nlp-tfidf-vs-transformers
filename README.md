@@ -19,6 +19,9 @@ tar -zxf aclImdb_v1.tar.gz
 
 I have used this dataset because **it has been widely used to show how to apply ML to Text analysis**.
 
+To simplify the loading of data, I have saved all the texts and labels in one csv file (imdb.csv) that you'll find in this repository.
+The last column (wps) is the number of words in the text.
+
 ## Bags-of-words and TF-IDF
 The simplest approach to use ML on Text data is to consider a text as "a bag of words".
 
